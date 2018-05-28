@@ -1,0 +1,9 @@
+<div ng-class="{confirmLineDelete : deleteLine.readyToDelete}" ng-mouseover="setReadyToDelete($event)" ng-mouseleave="cancelDelete($event);">
+    <button ng-show="deleteLine.readyToDelete === true" ng-click="removeMe($event)" type="button" class="btn btn-danger pull-right buttonCloseLine">
+     <span
+      class="glyphicon glyphicon-trash"
+      aria-hidden="true">
+    </span>
+  </button>
+</div>
+<div id="lineDirectiveTranscludeHere"></div>
